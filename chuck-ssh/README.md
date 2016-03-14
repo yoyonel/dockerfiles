@@ -2,6 +2,13 @@
 
 Docker pour construire une image faisant tourner ChucK+miniAudicle (IDE) via une connection SSH avec un serveur X11+PulseAudio (cote host).
 
+Contient:
+
+* Chuck audio engine: 1.3.5.2 -> [site web](http://chuck.cs.princeton.edu/)
+* miniAudicle (IDE): 1.3.3 -> [site web](http://audicle.cs.princeton.edu/mini/)
+* openssh-server (dernière version disponible via apt-get (*))
+* pulseaudio (*)
+
 ## ChucK + SSH connnection for X11 & PulseAudio
 
 1. ```sh generate_and_add_ssh_key.sh```
