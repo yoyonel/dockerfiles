@@ -1,6 +1,6 @@
 # Docker files
 
-* [ChucK+miniAudicle with SSH connections for Audio/Video (PulseAudio Server + X11 )](chuck-ssh/README.md)
+* [ChucK+miniAudicle with SSH connections for Audio/Video (PulseAudio Server + X11 )](chuck-ssh)
 
 ## Licence
 
