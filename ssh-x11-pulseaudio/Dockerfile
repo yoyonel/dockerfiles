@@ -21,9 +21,9 @@
 #
 # version SSH pulse-audio
 # utile (indispensable) à l'IGN
-FROM ignf/ubuntu
+#FROM ignf/ubuntu
 # utilisation d'une image ubuntu, faudrait tester une debian directement
-# FROM ubuntu:latest
+FROM ubuntu:latest
 #
 MAINTAINER Lionel ATTY <lionel.atty@gmail.com>
 
