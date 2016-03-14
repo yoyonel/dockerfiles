@@ -2,6 +2,10 @@
 
 * [ChucK+miniAudicle with SSH connections for Audio/Video (PulseAudio Server + X11 )](chuck-ssh)
 
+
+* [Serveur SSH - Audio/Video PulseAudio+X11](ssh-x11-pulseaudio)
+* [ChucK+miniAudicle utilisant le serveur ci dessus](chuck-using-ssh-server-in_docker)
+
 ## Licence
 
     Copyright (C) 2016  latty
