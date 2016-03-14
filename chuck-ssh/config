@@ -1,0 +1,9 @@
+
+
+# Chuck in Docker container (with SSH connection)
+Host docker-chuck
+  User      chuck
+  Port      2223
+  HostName  127.0.0.1
+  RemoteForward 64713 localhost:4713
+  ForwardX11 yes 
