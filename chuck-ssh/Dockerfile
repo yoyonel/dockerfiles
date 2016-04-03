@@ -21,12 +21,13 @@
 #
 # version SSH pulse-audio
 # utile (indispensable) à l'IGN
-FROM ignf/ubuntu
+#FROM ignf/ubuntu
 # utilisation d'une image ubuntu, faudrait tester une debian directement
-# FROM ubuntu:latest
+FROM ubuntu:latest
 #
 MAINTAINER Lionel ATTY <lionel.atty@gmail.com>
 
+RUN rm -r /var/cache/apt/archives/partial/
 #
 RUN apt-get -y update &&\
 	apt-get -y upgrade &&\
@@ -39,14 +40,21 @@ RUN apt-get -y update &&\
 RUN apt-get -y install \
 		make \
 		gcc \
-		g++ \
+		g++
+
+RUN apt-get -y install \
 		bison \
-		flex \
+		flex 
+
+RUN apt-get -y install \
 		libasound2-dev \
-		libsndfile1-dev \
-		libqt4-dev \
-		libqscintilla2-dev \
-		libpulse-dev
+		libsndfile1-dev 
+
+RUN apt-get -y install libqt4-dev
+
+RUN apt-get -y install libqscintilla2-dev
+
+RUN apt-get -y install libpulse-dev
 
 # Copy des sources pour le moteur Audio : ChucK
 COPY chuck-1.3.5.2.tgz /root/
