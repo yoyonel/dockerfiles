@@ -27,7 +27,7 @@ FROM ubuntu:latest
 #
 MAINTAINER Lionel ATTY <lionel.atty@gmail.com>
 
-RUN rm -r /var/cache/apt/archives/partial/
+#RUN rm -r /var/cache/apt/archives/partial/
 #
 RUN apt-get -y update &&\
 	apt-get -y upgrade &&\
