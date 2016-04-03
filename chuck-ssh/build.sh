@@ -1,4 +1,4 @@
-docker build -t yoyo/chuck_ssh_pulse .
+docker build -t yoyo/chuck_ssh_pulse $@ . 
 
 if [ -f id_rsa.pub ]
 	then
